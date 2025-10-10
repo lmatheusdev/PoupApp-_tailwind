@@ -1,7 +1,11 @@
 import Aside from "./Componentes/Aside"
+import Card from "./Componentes/Card"
 import Container from "./Componentes/Container"
+import DailyBudget from "./Componentes/DailyBudget"
 import Main from "./Componentes/Main"
 import SearchInput from "./Componentes/SearchInput"
+import Section from "./Componentes/Section"
+import Typography from "./Componentes/Typography"
 
 
 function App() {
@@ -12,8 +16,23 @@ function App() {
       <Main>
         <SearchInput/>
         <div>
-  
+          <Typography variant="h1">
+            Olá, Leandro!
+          </Typography>
+          <Typography variant="p">
+            veja como estão suas finanças hoje.
+          </Typography>
         </div>
+        <Section>
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              <DailyBudget value={250}/>
+            </Card.Body>
+          </Card>
+        </Section>
       </Main>
     </Container>
   )
