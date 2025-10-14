@@ -1,7 +1,7 @@
 
 const Card = ({ children }) => {
   return (
-    <div className="bg-neutral-surface rounded-3xl flex flex-col grow"> 
+    <div className="bg-neutral-surface rounded-3xl flex flex-col"> 
       {children}
     </div>
   )
@@ -18,7 +18,7 @@ export const CardHeader = ({ children }) => {
 
 export const CardBody = ({ children }) => {
   return (
-    <div className="bg-neutral-surface rounded-[0_0_24px_24px] p-[32px_16px]"> 
+    <div className="bg-neutral-surface rounded-[0_0_24px_24px] p-[32px_16px] flex flex-col justify-center grow"> 
       {children}
     </div>
   )

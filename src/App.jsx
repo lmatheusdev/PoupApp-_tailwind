@@ -1,8 +1,10 @@
+import { Accounts } from "./Componentes/Accounts"
 import Aside from "./Componentes/Aside"
 import Card from "./Componentes/Card"
 import Container from "./Componentes/Container"
 import DailyBudget from "./Componentes/DailyBudget"
 import Main from "./Componentes/Main"
+import SavingsStatus from "./Componentes/SavingsStatus"
 import SearchInput from "./Componentes/SearchInput"
 import Section from "./Componentes/Section"
 import Typography from "./Componentes/Typography"
@@ -30,6 +32,22 @@ function App() {
             </Card.Header>
             <Card.Body>
               <DailyBudget value={250}/>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Progresso da meta financeira:
+            </Card.Header>
+            <Card.Body>
+              <SavingsStatus/>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Minhas Contas
+            </Card.Header>
+            <Card.Body>
+              <Accounts/>
             </Card.Body>
           </Card>
         </Section>

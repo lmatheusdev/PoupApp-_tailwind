@@ -7,7 +7,7 @@ export default function DailyBudget({ value }) {
   })
 
   return (
-    <div className="text-primary-highlight text-[39px]/[125%] font-bold text-center">
+    <div className="m-0 text-primary-highlight text-[39px]/[125%] font-bold text-center">
       {formater.format(value)}
     </div>
   )
