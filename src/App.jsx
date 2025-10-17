@@ -3,6 +3,7 @@ import Aside from "./Componentes/Aside"
 import Card from "./Componentes/Card"
 import Container from "./Componentes/Container"
 import DailyBudget from "./Componentes/DailyBudget"
+import { FinancialMovements } from "./Componentes/FinancialMovements"
 import Main from "./Componentes/Main"
 import SavingsStatus from "./Componentes/SavingsStatus"
 import SearchInput from "./Componentes/SearchInput"
@@ -40,6 +41,14 @@ function App() {
             </Card.Header>
             <Card.Body>
               <SavingsStatus/>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Movimentações financeiras
+            </Card.Header>
+            <Card.Body>
+              <FinancialMovements/>
             </Card.Body>
           </Card>
           <Card>

@@ -10,7 +10,7 @@ const Card = ({ children }) => {
 export const CardHeader = ({ children }) => {
   return (
     <div className="bg-neutral-header text-neutral-text text-[20px]/[120%] text-center
-    font-bold rounded-[24px_24px_0_0] p-4" > 
+    font-bold rounded-t-3xl p-4" > 
       {children}
     </div>
   )
@@ -18,7 +18,7 @@ export const CardHeader = ({ children }) => {
 
 export const CardBody = ({ children }) => {
   return (
-    <div className="bg-neutral-surface rounded-[0_0_24px_24px] p-[32px_16px] flex flex-col justify-center grow"> 
+    <div className="bg-neutral-surface rounded-[0_0_24px_24px] p-[px] flex flex-col grow"> 
       {children}
     </div>
   )

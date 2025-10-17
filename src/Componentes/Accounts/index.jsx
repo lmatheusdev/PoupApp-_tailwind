@@ -12,16 +12,16 @@ export const Accounts = () => {
   ];
 
 return ( 
-  <div className=""> 
+  <div className="flex flex-col h-full"> 
     <List> 
       {accounts.map(ac => ( 
       <ListItem key={ac.bank}> 
       <Account account={ac} /> 
       </ListItem> 
       ))} 
-    </List> 
-    <div className=""/> 
-    <div className=""> 
+    </List>
+    <div className="flex-grow"/>
+    <div className="flex justify-center mb-6"> 
       <Button> 
         <IconWallet /> 
         Adicionar conta 

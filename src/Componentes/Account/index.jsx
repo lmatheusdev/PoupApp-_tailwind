@@ -7,9 +7,9 @@ currency: 'BRL',
 
 export const Account = ({ account }) => { 
 return ( 
-  <div className="flex justify-between text-neutral-text "> 
+  <div className="flex justify-between text-neutral-text"> 
     <div> 
-      <p className="m-0 text-[15px]/[120%] flex gap-2 align-center"> 
+      <p className="m-0 text-[15px]/[120%] flex gap-2 items-center"> 
         <IconBank/> 
         <strong>{account.bank}</strong> 
       </p> 
